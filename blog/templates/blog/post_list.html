@@ -1,0 +1,16 @@
+<!-- blog/templates/blog/post_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.title }} - {{ post.author.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
